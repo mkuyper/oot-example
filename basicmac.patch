@@ -1,0 +1,14 @@
+diff --git a/projects/platform.mk b/projects/platform.mk
+index 70bf418..5838405 100644
+--- a/projects/platform.mk
++++ b/projects/platform.mk
+@@ -13,7 +13,8 @@ FAMILIES	:= $(subst -, ,$(TARGET))
+ # ------------------------------------------------
+ # Families
+ 
+--include $(wildcard $(TOPDIR)/projects/fam-*.mk)
++FAM_MAKEFILES += $(wildcard $(TOPDIR)/projects/fam-*.mk)
++-include $(FAM_MAKEFILES)
+ 
+ 
+ # ------------------------------------------------

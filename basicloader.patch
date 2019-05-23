@@ -1,0 +1,10 @@
+diff --git a/build/boards/main.mk b/build/boards/main.mk
+index d14f818..0683a84 100644
+--- a/build/boards/main.mk
++++ b/build/boards/main.mk
+@@ -1,4 +1,4 @@
+-TOPDIR	:= ../../..
++TOPDIR	?= ../../..
+ MKDIR	:= $(TOPDIR)/build/makefiles
+ SRCDIR	:= $(TOPDIR)/src
+ 
